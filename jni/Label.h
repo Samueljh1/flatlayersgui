@@ -4,5 +4,5 @@
 
 class Label {
 public:
-	void setText(std::string);
+	void setText(std::string &const);
 };
