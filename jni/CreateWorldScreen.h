@@ -51,7 +51,7 @@ static void CreateWorldScreen$buttonClicked(CreateWorldScreen* scrn, Button* btn
 	}
 
 	if(btn == scrn->createWorldBtn && scrn->seedBox->text != "") {
-		if(scrn->isFlat) FlatLevelSource::DEFAULT_LAYERS = scrn->seedBox->text;
+		if(scrn->isFlat) FlatLevelSource::DEFAULT_LAYERS = "[" + scrn->seedBox->text + "]";
 	} else FlatLevelSource::DEFAULT_LAYERS = "[7,3,3,2]"; // Use default layers if layer box is empty
 	_CreateWorldScreen$buttonClicked(scrn, btn);
 }
